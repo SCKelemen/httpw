@@ -80,7 +80,7 @@ func doSomething(r *http.Request) (*httpw.R, error) {
 ```
 
 By default, if a standard error is returned, the request status will be set to
-`http.StatusInternalServerError`. This behaviour can be change by passing options
+`http.StatusInternalServerError`. This behaviour can be changed by passing options
 to the wrapper. Here are all the differents options:
 
 ```go
