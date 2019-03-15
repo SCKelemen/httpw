@@ -36,7 +36,7 @@ handlers, tests, ...
 The solution I found and iterate on for multiple weeks is the following:
 `func(r *http.Request) (*httpw.Response, error)`. With the following signature
 any handlers can handle the request as they would normally do, yet does not handle
-how response is wrote nor how errors are handled. This is leave to a callback
+how response is written, nor how errors are handled. This is left to a callback
 that write the response, and another callback to handle the error, if any (for
 example adding fields in a logger, set a tracing span to any status, ...).
 
